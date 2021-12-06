@@ -1,0 +1,163 @@
+/********************************************************************
+**I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy.
+**No part of this assignment has been copied manually or electronically from any other source (including web sites)
+**except for the information supplied by the WEB222 instructors and / or made available in this assignment for my use.
+**I also declare that no part of this assignment has been distributed to other students.
+**Name: Hui Chen
+**Dated: 2021/12/5
+********************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  background-color: #97d6d6;
+  font-family: Monospace;
+}
+
+/* Style the header */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(71, 156, 182);
+  margin: 0px 50px 20px 50px;
+  border-radius: 25px;
+}
+
+
+nav {
+  float: left;
+  width: 240px;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 0px 10px 0px 50px;
+}
+
+
+/* Style the tip place in the right of web page */
+.tip {
+  float: left;
+  width: 240px;
+  height: 100vh;
+  background-color: #3e4652;
+  padding: 20px;
+  margin: 0px 10px 0px 0px;
+  font-size: 18px;
+}
+
+
+.tipTitle {
+  margin-top: -30px;
+  text-align: center;
+  color: darkgray;
+  font-size: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 60%;
+  background-color: #fefeff;
+  height: 100vh;
+  overflow-y: auto;
+  max-height: max-content;
+  margin: 0px 10px 10px 0px;
+  font-size: 20px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #1f9bcc;
+  padding: 10px;
+  text-align: center;
+  color:black;
+  margin: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+
+/* Style the menu link */
+a:link {
+  color:white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* Style the menu font - Honesty, Info, Reflection*/
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* when mouse over menu link, it will turn yellow*/
+a:hover {
+  color: rgb(252, 195, 9);
+  text-decoration: none;
+}
+
+/* Style the menu title*/
+.menuTitle {
+  margin-top: -20px;
+  text-align: center;
+  color: darkgray;
+  font-family: sans-serif;
+}
+
+.menu {
+  padding: 0px 10px 10px 10px;
+  line-height: 50px;
+}
+
+
+/* Style the main part title - The middle page*/
+.articleTitle {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Style the warning from info page*/
+.warning {
+  font-size: 13px;
+  color: rgb(201, 98, 98);
+  text-align: left;
+}
+
+
+button, input, select, textarea {
+  height: inherit;
+}
+
+/* Style the input form from info page*/
+.form {
+  left: 480px;
+  position: absolute;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}

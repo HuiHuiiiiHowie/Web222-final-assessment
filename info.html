@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hui Chen - Info Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1100, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" type='text/css' media='screen'/>
+    <script src="info.js"></script>
+</head>
+
+<body>
+    <header>
+      <img src="img/seneca.png" id="logo" alt="logo" width = "250"/>
+    </header>
+
+    <section>
+      <nav>
+		<div class="menuTitle">
+          <h2>Menu</h2>
+    </div>
+		<div class = "menu">
+			<ul>
+				<li><a href = "honesty.html">> Honesty</a></li>
+				<li><a href = "info.html">> Info</a></li>
+				<li><a href = "reflection.html">> Reflection</a></li>
+			  </ul>
+		</div>
+      </nav>
+
+      <article>
+        <div class = "articleTitle">
+            <h2>User info page</h2>
+       </div>
+        <h2>Please Fill out your information</h2>
+
+        <div class="form">
+          <form name="signup" method="post" action="https://httpbin.org/post" enctype="multipart/form-data" onsubmit="return validateForm();">
+            <table>
+              <tr>
+                <td><label>First Name</label></td>
+                <td><input type="text" name="userFirstName" id = "firstName"/></td>
+              </tr>
+              <tr>
+                <td><label>Last Name</label></td>
+                <td><input type="text" name="userLastName" id = "LastName"/></td>
+              </tr>
+              <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password" id = "Password"/></td>
+              </tr>
+              <tr>
+                <td><label>Confirm Password</label></td>
+                <td><input type="password" name="confirmation password" id = "ConfirmPassword"/></td>
+              </tr>
+              <tr>
+                <td><label>Username</label></td>
+                <td><input type="text" name="username" id = "Username"/></td>
+              </tr>
+              <tr>
+                <td><label>Education Status</label></td>
+                <td>
+                  <input type="radio" name="educationStatus" value="graduated"/><label>Graduated</label>
+                  <input type="radio" name="educationStatus" value="currentEnrolled"/><label>Current enrolled</label>
+                  <input type="radio" name="educationStatus" value="notGraduated"/><label>Not graduated</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="email" id = "email" required="required"/></td>
+              </tr>
+              <tr>
+                <td><label>Age</label></td>
+                <td><input type="text" name="age" size="5" id = "Age"/></td>
+              </tr>
+            </table>
+            <div style="padding: 10px 0px 0px 190px">
+              <input type="hidden" name="lastName" id="lastName" value="Chen"/>
+              <input type="hidden" name="studentId" id="studentId" value="109800193"/>
+              <input type="submit" value="Submit"/>
+              <input type="reset" value="Clear"/>
+            </div>
+          </form>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="tipTitle">
+          <h3>Warnings!</h3>
+          <p class="warning" id ="errors"></p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+		©2021 - &lt;Hui Chen&gt;
+    </footer>
+  </body>
+</html>
