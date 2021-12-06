@@ -96,24 +96,32 @@ footer {
 }
 
 
-/* Style the menu link */
+/* Style the unvisited link */
 a:link {
-  color:white;
+  color:rgb(0, 0, 0);
   text-decoration: none;
   font-family: sans-serif;
 }
 
-/* Style the menu font - Honesty, Info, Reflection*/
+/* Style the link when we clicked - Honesty, Info, Reflection*/
 a:visited {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
-/* when mouse over menu link, it will turn yellow*/
+
+/*style links when you mouse over them*/
 a:hover {
   color: rgb(252, 195, 9);
   text-decoration: none;
 }
+
+/* style links when you clicking on them*/
+a:active {
+  color: rgb(77, 77, 148);
+  text-decoration: none;
+}
+
 
 /* Style the menu title*/
 .menuTitle {
